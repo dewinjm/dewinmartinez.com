@@ -1,4 +1,6 @@
 # Personal website to dewinmartinez.com
+[![Netlify Status](https://api.netlify.com/api/v1/badges/30640a37-c190-45dd-958f-35b9148a1a9f/deploy-status)](https://app.netlify.com/sites/dewinmartinez/deploys)
+
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
