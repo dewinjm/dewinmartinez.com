@@ -19,13 +19,6 @@ export default function Home() {
         <p className={styles.description}>
           Software engineer, specialized in Mobile & Web Developer.
         </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-        </div>
       </main>
 
       <footer className={styles.footer}>
