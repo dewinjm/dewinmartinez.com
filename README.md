@@ -1,5 +1,5 @@
 # Personal website to dewinmartinez.com
-
+[![CI Pipeline](https://github.com/dewinjm/dewinmartinez.com/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/dewinjm/dewinmartinez.com/actions/workflows/ci.yml)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
