@@ -1,6 +1,9 @@
 name: CI Pipeline
 
-on: [push]
+on:
+  pull_request:
+    branches:
+    - main
 
 jobs:
   build:
@@ -49,7 +52,7 @@ jobs:
 
       - name: Run linter
         run: ${{ steps.detect-package-manager.outputs.runner }} next lint
-  
+      
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       

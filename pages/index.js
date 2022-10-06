@@ -1,6 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
@@ -12,9 +11,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          DEWIN MARTÍNEZ
-        </h1>
+        <h1 className={styles.title}>DEWIN MARTÍNEZ</h1>
 
         <p className={styles.description}>
           Software engineer, specialized in Mobile & Web Developer.
@@ -22,10 +19,8 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <p>
-          Dewin J. Martínez © 2022. All Right Reserved.
-        </p>
+        <p>Dewin J. Martínez © 2022. All Right Reserved.</p>
       </footer>
     </div>
-  )
+  );
 }
