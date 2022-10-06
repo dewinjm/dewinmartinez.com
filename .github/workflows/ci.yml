@@ -32,6 +32,16 @@ jobs:
         with:
           node-version: "16"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+      
+      - name: Sentry release
+        uses: getsentry/action-release@v1
+        env:
+          SENTRY_AUTH_TOKEN: ${{secrets.SENTRY_AUTH_TOKEN}}
+          SENTRY_ORG: ${{secrets.SENTRY_ORG}}
+          SENTRY_PROJECT: ${{secrets.SENTRY_PROJECT}}
+          SENTRY_URL: https://sentry.io/
+        with:
+          environment: production
 
       - name: Restore cache
         uses: actions/cache@v3
@@ -50,17 +60,6 @@ jobs:
       - name: Run linter
         run: ${{ steps.detect-package-manager.outputs.runner }} next lint
       
-      # - uses: actions/checkout@v2
-      # - name: Sentry release
-      #   uses: getsentry/action-release@v1
-      #   env:
-      #     SENTRY_AUTH_TOKEN: ${{secrets.SENTRY_AUTH_TOKEN}}
-      #     SENTRY_ORG: ${{secrets.SENTRY_ORG}}
-      #     SENTRY_PROJECT: ${{secrets.SENTRY_PROJECT}}
-      #     SENTRY_URL: https://sentry.io/
-      #   with:
-      #     environment: production
-  
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       
