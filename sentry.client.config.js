@@ -12,5 +12,4 @@ Sentry.init({
   debug: true,
   tracesSampleRate: 1.0,
   release: version,
-  dryRun: process.env.NODE_ENV !== 'production',
 });
